@@ -22,7 +22,6 @@ body {
     width: 400px;
 }
 
-
 .result {
     display: flex;
     flex-direction: row;
@@ -38,94 +37,39 @@ body {
     padding-right: 0.5rem;
 }
 
-.firstline,
-.secondline,
-.thirdline,
-.fourthline,
-.lastline {
+.button {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
-
-.firstline div {
+    justify-content: center;
+    align-items: center;
     height: 7.5rem;
-    line-height: 7.5rem;
     width: 25%;
     font-size: 2.5rem;
     color: black;
     background-color: #d8d9db;
-    text-align: center;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.special-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7.5rem;
+    width: 25%;
+    font-size: 2.5rem;
+    color: white;
+    background-color: #df974c;
     border-bottom: 2px solid black;
 }
 
-.firstline div:nth-last-of-type(3) {
-    border-right: 2px solid black;
+.row {
+    display: flex;
+}
+
+.button.morespace {
     width: 50%;
 }
 
-.firstline div:nth-last-of-type(2) {
-    border-right: 2px solid black;
-}
-
-.secondline div,
-.thirdline div,
-.fourthline div {
-    height: 7.5rem;
-    line-height: 7.5rem;
-    width: 25%;
-    font-size: 2.5rem;
-    color: black;
-    background-color: #d8d9db;
-    text-align: center;
-    border-bottom: 2px solid black;
-}
-
-.lastline div {
-    height: 7.5rem;
-    line-height: 7.5rem;
-    width: 25%;
-    font-size: 2.5rem;
-    color: black;
-    background-color: #d8d9db;
-    text-align: center;
-    border-bottom: 2px solid black;
-}
-
-.secondline>div,
-.thirdline>div,
-.fourthline>div,
-.lastline>div {
-    border-right: 2px solid black;
-}
-
-.firstline div:nth-of-type(3),
-.secondline div:nth-of-type(4),
-.thirdline div:nth-last-of-type(1),
-.fourthline div:nth-last-of-type(1),
-.lastline div:nth-last-of-type(1) {
-    background-color: #df974c;
-    color: white;
-    border-right: none;
-}
-
-.lastline div:nth-last-of-type(2) {
+.button.mostspace {
     width: 75%;
-}
-
-.firstline>div:hover,
-.secondline>div:hover,
-.thirdline>div:hover,
-.fourthline>div:hover,
-.lastline>div:hover {
-    background-color: #ebebeb;
-    cursor: pointer;
-}
-
-.firstline div:nth-of-type(3):hover,
-.secondline div:nth-of-type(4):hover,
-.thirdline div:nth-last-of-type(1):hover,
-.fourthline div:nth-last-of-type(1):hover,
-.lastline div:nth-last-of-type(1):hover {
-    background-color: #dfb07e;
 }
