@@ -37,7 +37,8 @@ body {
     padding-right: 0.5rem;
 }
 
-.button {
+.button,
+.special-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,15 +52,9 @@ body {
 }
 
 .special-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 7.5rem;
-    width: 25%;
-    font-size: 2.5rem;
     color: white;
     background-color: #df974c;
-    border-bottom: 2px solid black;
+    border-right: none;
 }
 
 .row {
