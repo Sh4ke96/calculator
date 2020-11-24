@@ -73,3 +73,16 @@ body {
 .button.mostspace {
     width: 75%;
 }
+
+.button:hover {
+    background-color: #ebebeb;
+}
+
+.special-button:hover {
+    background-color: #dfb07e;
+}
+
+.button,
+.special-button {
+    cursor: pointer;
+}
